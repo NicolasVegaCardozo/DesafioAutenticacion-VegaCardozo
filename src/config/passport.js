@@ -78,10 +78,10 @@ const initializePassport = () => {
                     age: 18, //Edad por defecto,
                     password: 'password'
                 })
-                done(null, userCreated)
+                return done(null, userCreated)
 
             } else {
-                done(null, user)
+                return done(null, user)
             }
 
         } catch (error) {
