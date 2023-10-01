@@ -73,7 +73,7 @@ const initializePassport = () => {
             if (!user) {
                 const userCreated = await userModel.create({
                     first_name: profile._json.name,
-                    last_name: ' ',
+                    last_name: '   ',
                     email: profile._json.email,
                     age: 18, //Edad por defecto,
                     password: 'password'
@@ -102,5 +102,6 @@ const initializePassport = () => {
     })
 
 }
+
 
 export default initializePassport

@@ -18,7 +18,7 @@ import userRouter from './routes/user.routes.js';
 
 import cartModel from './models/carts.models.js';
 import productModel from './models/products.models.js';
-import userModel from './models/user.models.js';
+import { userModel } from './models/user.models.js';
 
 
 const app = express();
